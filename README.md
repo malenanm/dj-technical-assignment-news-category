@@ -4,10 +4,10 @@
 
 ### Overview
 
-This project aims to develop a **semantic search system** using **Generative AI (GPT-4)**, implementing a pipeline that includes:
+This project aims to develop a **semantic search system** using **Generative AI**, implementing a pipeline that includes:
 
 - **Semantic Search**: Using embeddings to search news articles.
-- **Generative AI**: Integrating GPT-4 for tasks such as summarization or question answering.
+- **Generative AI**: Integrating LLMs for tasks such as summarization or question answering.
 - **Scalable Expansion**: The system is designed to be extended to tasks like classification, recommendations, topic modeling, and more.
 
 ### Problem Definition
@@ -17,7 +17,7 @@ The goal of this project is to address the challenge of **semantic information r
 ### Dataset
 
 **News Category Dataset** from Kaggle:  
-A dataset containing news articles categorized into various topics. It is suitable for **semantic search** and **classification** tasks.
+A dataset containing news articles categorized into various topics. It is suitable for **semantic search** or **classification** tasks.
 
 - [Download the dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset)
 
@@ -27,16 +27,16 @@ A dataset containing news articles categorized into various topics. It is suitab
    - The **News Category Dataset** will be used to train the semantic search model.
 
 2. **Preprocessing**:  
-   - Cleaning, tokenizing, and transforming the data into a format compatible with embedding models.
+   - Cleaning, splitting, and transforming the data into a format compatible with embedding models.
 
 3. **Modeling**:  
    - Generating embeddings using pre-trained models such as **Sentence Transformers**.
-   - Integrating **GPT-4** for generative tasks like summarization and question answering.
+   - Integrating **MistralAL** for generative tasks like summarization and question answering.
 
 4. **Search Pipeline**:  
    - **User input**: A semantic query.
    - **Initial retrieval**: Filters based on embeddings.
-   - **Refinement**: Generating relevant responses or summaries using GPT-4.
+   - **Refinement**: Generating relevant responses or summaries using MistralAI.
 
 5. **Evaluation**:  
    - The model will be evaluated based on:
@@ -60,8 +60,6 @@ Follow these steps to set up the project locally:
    ```bash
    pip install -r requirements.txt
 
-## Use
-
 ## Project Structure
 ```plaintext
 dj-technical-assignment-news-category/
@@ -72,7 +70,7 @@ dj-technical-assignment-news-category/
 ├── README.md      # Project documentation
 └── requirements.txt # Project dependencies
 ```
-## Next Steps
+## Possible Next Steps
 - Integrate automatic classification based on embeddings.
 - Add a basic user interface for querying.
 - Implement topic modeling using techniques like LDA or embeddings.
